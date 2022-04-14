@@ -1,0 +1,109 @@
+.form{
+   width: 528px;
+   height: 581px;
+   margin-left: auto;
+   margin-right: auto;
+   outline: 1px solid tomato;
+   padding: 15px;
+}
+
+.form-field{
+  
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+
+}
+.form-title{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: color: #212121;;
+}
+
+.form-textarea{
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+label{
+    margin-bottom: 4px;
+    color: #757575;
+}
+
+.form-contacts{
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    
+}
+
+.form-field .form-textarea::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    
+    }
+
+    
+.form-field:focus-within .modal-icon{
+        fill: rgba(33, 150, 243, 1);
+      }
+
+
+
+
+.form-button {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    color: #fff;
+background-color: #2196F3;
+}
+.button-form{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.button-text{
+    
+font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+}
+.label-modal{
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.form-person{
+    position: relative;
+}
+.modal-icon{
+    position: absolute;
+    top: 11px;
+    bottom: 11px;
+    left: 12px;
+}
+.text-form{
+    color: rgba(33, 150, 243, 1);
+    
+}
