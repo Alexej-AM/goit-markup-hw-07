@@ -47,7 +47,7 @@
 
 
 .header__link--active {
-    color: var(--blue-color);
+    color: $blue-color;
 }
 
 .header__link--active::after {
