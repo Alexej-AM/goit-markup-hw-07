@@ -53,12 +53,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 42px;
-    transition: border-color 250ms var(--transition-timing-function);
+    transition: border-color 250ms $transition-timing-function;
+
+    .form__field:focus-within & {
+        border-color: rgba(33, 150, 243, 1);
+    }
 }
 
-.form__field:focus-within .form__contacts {
-    border-color: rgba(33, 150, 243, 1);
-}
 
 
 .form__icon {
@@ -66,12 +67,14 @@
     top: 11px;
     bottom: 11px;
     left: 12px;
-    transition: fill 250ms var(--transition-timing-function);
+    transition: fill 250ms $transition-timing-function;
+
+    .form__field:focus-within & {
+        fill: rgba(33, 150, 243, 1);
+    }
 }
 
-.form__field:focus-within .form__icon {
-    fill: rgba(33, 150, 243, 1);
-}
+
 
 .form__textarea {
     outline: none;
@@ -84,7 +87,11 @@
     height: 120px;
     margin-right: auto;
     margin-left: auto;
-    transition: border-color 250ms var(--transition-timing-function);
+    transition: border-color 250ms $transition-timing-function;
+
+    .form__field:focus-within & {
+        border-color: rgba(33, 150, 243, 1);
+    }
 }
 
 .form__textarea::placeholder {
@@ -95,9 +102,7 @@
     letter-spacing: 0.01em;
 }
 
-.form__field:focus-within .form__textarea {
-    border-color: rgba(33, 150, 243, 1);
-}
+
 
 .form-checkbox {
     position: relative;

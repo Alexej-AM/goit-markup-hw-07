@@ -4,7 +4,7 @@
 
 .team__title {
     margin-bottom: 50px;
-    color: var(--primary-color);
+    color: $primary-color;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -17,7 +17,7 @@
 }
 
 .team__item {
-    background-color: var(--white-color);
+    background-color: $white-color;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -37,7 +37,7 @@
 .team-card__name {
     margin-bottom: 10px;
     text-align: center;
-    color: var(--primary-color);
+    color: $primary-color;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -46,7 +46,7 @@
 
 .team-card__text {
     text-align: center;
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.2;
@@ -71,21 +71,24 @@
     border-radius: 50%;
     height: 44px;
     width: 44px;
-    transition: background-color 250ms var(--transition-timing-function);
+    transition: background-color 250ms $transition-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+    
+    }
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
-    background-color: #2196f3;
 
-}
 
 .social-list__icon {
     fill: #afb1b8;
-    transition: fill 250ms var(--transition-timing-function);
+    transition: fill 250ms $transition-timing-function;
+
+    .social-list__link:hover &,
+    .social-list__link:focus & {
+        fill: #ffffff;
+    }
 }
 
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-    fill: #ffffff;
-}

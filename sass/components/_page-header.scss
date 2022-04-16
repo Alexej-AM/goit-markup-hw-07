@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid #ececec;
-    background-color: var(--white-color);
+    background-color: $white-color;
 }
 
 .header__container {
@@ -33,18 +33,17 @@
     padding-bottom: 32px;
     display: block;
 
-    color: var(--primary-color);
+    color: $primary-color;
     font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color 250ms var(--transition-timing-function);
-}
+    transition: color 250ms $transition-timing-function;
 
-.header__link:hover,
-.header__link:focus {
-    color: var(--blue-color);
+    &:hover,
+    &:focus {
+        color: $blue-color;
+    }
 }
-
 
 
 .header__link--active {
@@ -59,7 +58,7 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: var(--blue-color);
+    background-color: $blue-color;
     border-radius: 2px;
 }
 
@@ -76,19 +75,18 @@
     padding-bottom: 32px;
     display: flex;
     align-items: center;
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color 250ms var(--transition-timing-function);
+    transition: color 250ms $transition-timing-function;
 
-
+&:hover,
+&:focus {
+    color: $blue-color;
+}
 }
 
-.header-contacts__connect:hover,
-.header-contacts__connect:focus {
-    color: var(--blue-color);
-}
 
 .header-contacts__item:not(:first-child) {
     margin-left: 30px;
@@ -104,7 +102,7 @@
 
 .logo {
     margin-right: 93px;
-    color: var(--blue-color);
+    color: $blue-color;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -113,5 +111,5 @@
 }
 
 .logo__black {
-    color: var(--primary-color);
+    color: $primary-color;
 }

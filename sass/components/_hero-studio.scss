@@ -17,7 +17,7 @@
 }
 
 .hero__title {
-    color: var(--white-color);
+    color: $white-color;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -27,8 +27,8 @@
 }
 
 .hero__button {
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    color: $white-color;
+    background-color: $blue-color;
     border: transparent;
     border-radius: 4px;
     font-family: inherit;

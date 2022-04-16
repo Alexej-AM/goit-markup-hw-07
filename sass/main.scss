@@ -1,2 +1,12 @@
-@import './vars'
-@import './page-header'
+@import "./base/fonts";
+@import "./base/normalize";
+@import "./utils/vars" ;
+@import "./components/page-header";
+@import "./components/hero-studio";
+@import "./components/backdrop-modal";
+@import "./components/form-hero";
+@import "./components/section-benefits";
+@import "./components/gallery-section";
+@import "./components/team-section";
+@import "./components/clients-section";
+@import "./components/footer-page";
